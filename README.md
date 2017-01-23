@@ -1,25 +1,12 @@
-# ReduxSimpleStarter
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+## Redux Middleware
 
-###Getting Started###
-
-There are two methods for getting started with this repo.
-
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Example of custom redux middleware. It achieves the same primary goal as `redux-promise-middleware` by looking for a Promise object in the action payload. When a Promise is encountered, it waits for the Promise to resolve before dispatching the same action with the resolved promise payload.
 
 ```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
+$ npm install
+$ npm run start
 ```
+App should be up on http://localhost:8080
 
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-	> npm install
-	> npm start
-```
+Running `guard` in a separate terminal will also do browser livereload when source changes.
